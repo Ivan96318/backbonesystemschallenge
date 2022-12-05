@@ -7,4 +7,8 @@ services:
     envVars:
       - key: RAILS_MASTER_KEY
         sync: false
-      
+  - type: redis
+    name: redis
+    ipAllowList: []
+    plan: free
+    maxmemoryPolicy: noeviction
