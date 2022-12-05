@@ -3,7 +3,7 @@ services:
     name: rails
     env: ruby
     buildCommand: "./bin/render-build.sh"
-    startCommand: rails s
+    startCommand: bundle exec rails s
     plan: free
     envVars:
       - key: RAILS_MASTER_KEY
